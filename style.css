@@ -1,0 +1,32 @@
+body {
+	font-family: sans-serif;
+}
+
+#results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.file {
+    display: block;
+    float: left;
+    height: 160px;
+    width: 128px;
+    margin: 8px;
+}
+
+.file .icon {
+    display: block;
+    width: 100%;
+    border: solid 1px black;
+    height: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#credits {
+    clear: both;
+    padding-top: 64px;
+}
