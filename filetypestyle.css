@@ -1,0 +1,4 @@
+
+.e{% shortname %}.file .icon {
+	background-image: url('/static/icons/48px/{% relativepath %}');
+}
