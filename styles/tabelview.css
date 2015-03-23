@@ -1,0 +1,76 @@
+.tabelview ~ ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: inset 1px #bbb;
+    background: white;
+}
+
+.tabelview ~ ul:after {
+    content: '.';
+    clear: both;
+    display: block;
+    font-size: 0;
+}
+
+.tabelview ~ ul .icon {
+    content: 'Geen icoon';
+}
+
+
+.tabelview ~ ul .file, 
+.tabelview ~ ul .directory {
+    display: block;
+    margin: 4px;
+    height: 16px;
+    width: calc(100% - 8px);
+    position: relative;
+    border: solid 1px white;
+}
+
+.tabelview ~ ul .file:hover,
+.tabelview ~ ul .directory:hover {
+    border: dotted 1px black;
+}
+
+.tabelview ~ ul .directory .icon { 
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url('/static/folder.gif');
+}
+
+.tabelview ~ ul .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.tabelview ~ ul .options {    
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: calc(100% - 16px);
+}
+
+.tabelview ~ ul .name {
+    white-space: nowrap;
+    overflow: hidden;
+    display:  block;
+    float: left;
+    width: 50%;
+}
+
+.tabelview ~ ul .hrsize {
+    width: 20%;
+    float: left;
+    display: block;
+}
+
+.tabelview ~ ul .date {
+    width: 20%;
+    float: left;
+    display: block;
+}

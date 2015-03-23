@@ -4,7 +4,7 @@
 	</span>
 	<div class="options">	
 		<a class="name column" href="/getfile{% url %}"
-		title="{% filesize %}">
+		title="">
 			{% name %}
 		</a>	
 		<a class="parent"
@@ -16,6 +16,9 @@
 		</span>
 		<span class="date column">
 			{% lastdate %}
+		</span>
+		<span class="hrsize">
+			{% filesize %}
 		</span>
 	</div>
 </li>

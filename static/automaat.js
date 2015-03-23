@@ -14,8 +14,8 @@ $("a.sort").each(function() {
 			var rightvalue = $(classname, right).text();
 
 			if (isintsort) {
-				leftvalue = parseInt(leftvalue);
-				rightvalue = parseInt(rightvalue);
+				leftvalue = parseInt(leftvalue) || 0;
+				rightvalue = parseInt(rightvalue) || 0;
 
 				return leftvalue > rightvalue;
 			}
