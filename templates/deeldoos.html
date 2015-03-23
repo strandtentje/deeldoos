@@ -11,8 +11,43 @@
 		</li>
 	</ul>
 </div>
+<div class="toolbar">
+	<ul>
+		<li>
+			<a class="sort" id="name">Sorteren op naam</a>
+		</li>
+		<li>
+			<a class="sort" id="date">Sorteren op datum</a>
+		</li>
+		<li>
+			<a class="int sort" id="size">Sorteren op grootte</a>
+		</li>
+	</ul>
+</div>
+<div class="toolbar">
+	<ul>
+		<li>
+			<span id="sorteditems">ongesorteerd</span>
+		</li>
+	</ul>
+</div>
+<div class="toolbar">
+	<ul>
+		<li>
+			<a class="view" id="balkview">
+				Toon als balken
+			</a>
+		</li>
+		<li>
+			<a class="view" id="tabelview">
+				Toon als tabel
+			</a>
+		</li>
+	</ul>
+</div>
 
 <div id="results">
+	<span class="viewswitch balkview"></span>
 	<ul>
 	{% browser %}
 	</ul>

@@ -1,0 +1,82 @@
+body {
+	font-family: sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    background: #bbb;
+}
+
+.toolbar {
+    background: #bbb;
+    float: left;
+    border: outset #ddd 1px;
+}
+
+.toolbar ul {
+    margin: 0;
+    padding: 8px 0;
+    list-style-type: none;
+}
+
+.toolbar ul li {
+    display: inline;
+}
+
+.toolbar ul li a {
+    text-decoration: none;
+    color: black;        
+    padding: 8px 8px;
+    border: solid transparent 1px;
+}
+
+.toolbar ul li a:hover {
+    border: outset #ddd 1px;
+}
+
+.toolbar form {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+#results {
+    clear: both;
+    border: solid 2px #bbb;
+}
+
+#credits {
+    clear: both;
+}
+
+#credits ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;    
+}
+
+#credits li {
+    display: block;
+    float: left;
+    border: solid 2px #bbb;
+    position: relative;
+    top: -4px;
+    margin-bottom: 4px;
+}
+
+#credits li a {
+    border: inset 1px #bbb;
+    background: white;
+    padding: 4px;
+}
+
+.parent { display:  none; }
+
+.search .parent { display: block; }
+
+.hidden {
+    display: none;
+}
+
+{% balkview %}
+
+{% filetypes %}

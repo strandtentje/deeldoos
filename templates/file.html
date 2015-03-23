@@ -3,13 +3,19 @@
 		
 	</span>
 	<div class="options">	
-		<a class="name" href="/getfile{% url %}"
-		 title="{% filesize %}">
+		<a class="name column" href="/getfile{% url %}"
+		title="{% filesize %}">
 			{% name %}
 		</a>	
 		<a class="parent"
 			href="/navigate{% parent %}" >
 			[parent]
 		</a>
+		<span class="hidden size column">
+			{% bytecount %}
+		</span>
+		<span class="date column">
+			{% lastdate %}
+		</span>
 	</div>
 </li>

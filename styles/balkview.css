@@ -1,0 +1,66 @@
+.balkview ~ ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: inset 1px #bbb;
+    background: white;
+}
+
+.balkview ~ ul:after {
+    content: '.';
+    clear: both;
+    display: block;
+    font-size: 0;
+}
+
+.balkview ~ ul .icon {
+    content: 'Geen icoon';
+}
+
+.balkview ~ ul .file, 
+.balkview ~ ul .directory {
+    display: block;
+    float: left;
+    margin: 4px;
+    height: 32px;
+    width: 384px;
+    position: relative;
+}
+
+.balkview ~ ul .file .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: contain;
+    background-image: url('/static/icons/48px/_blank.png');
+}
+
+.balkview ~ ul .directory .icon { 
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url('/static/folder.gif');
+}
+
+.balkview ~ ul .options {    
+    display: block;
+    position: absolute;
+    left: 40px;
+    width: 336px;
+}
+
+.balkview ~ ul .name {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
