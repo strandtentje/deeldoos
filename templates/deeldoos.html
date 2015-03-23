@@ -1,6 +1,18 @@
-<h1>Deeldoos</h1>
+<div class="toolbar">
+	<ul>
+		<li>	
+			<a href="/search">Zoeken</a>
+		</li>
+		<li>
+			<a class="retreat" href="/{% pathsection %}/..">Terugtrekken</a>
+		</li>
+		<li>
+			<a class="retreat" href="/tar/{% pathsection %}">TAR maken</a>
+		</li>
+	</ul>
+</div>
+
 <div id="results">
-	<a class="retreat" href="/{% pathsection %}/..">Terugtrekken</a>
 	<ul>
 	{% browser %}
 	</ul>

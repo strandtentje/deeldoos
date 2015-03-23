@@ -1,23 +1,20 @@
-<a href="/">Hoofdpagina</a>|<a href="/navigate">Navigeren</a>
-<h1>Vind die vakantiefoto of rechtenvrije documentaire</h1>
-<p>
-	De volgende sleutelwoorden zijn bruikbaar in queries. 
-	De queries zijn kastgevoelig.
-</p>
-<ul>
-	<li>OR: Reeds vergaarde set inclusief hieropvolgende set</li>
-	<li>AND: Slechts de gemene leden van de voorgaande en opvolgende sets</li>
-</ul>
-<form method="get">
-	<label for="q">Query</label>
-	<input type="text" name="q" id="q">
-	<input type="submit" value="zoek">
-</form>
-<div id="results">
+<div class="toolbar">
 	<ul>
-	{% directories %}
+		<li>
+			<a href="/navigate">Bladeren</a>
+		</li>
+		<li>
+			<form method="get">
+				<label for="q">Query</label>
+				<input type="text" name="q" id="q">
+				<input type="submit" value="zoek">
+			</form>
+		</li>
 	</ul>
+</div>
+<div id="results" class="search">
 	<ul>
-	{% files %}
+		{% directories %}
+		{% files %}
 	</ul>
 </div>
