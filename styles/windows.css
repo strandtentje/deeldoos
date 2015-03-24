@@ -1,0 +1,98 @@
+.desktop {
+    background: teal;
+    background-image: url('/static/wp.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: calc(100%);
+}
+
+.desktop a.icon {
+    display: block;
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.desktop a span {
+    display: block;
+    border: dotted 1px transparent;
+}
+
+.desktop a:hover span {
+    border: dotted 1px gray;
+}
+
+
+.window {
+    background: #bbb;
+    border-top: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    z-index: 10;
+}
+
+.window.active {
+    z-index: 100;
+}
+
+.window .titlebar {
+    background: #888;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+.window.active .titlebar {
+    background: #008;    
+}
+
+.window .titlebar .icon {
+    float: left;
+}
+
+.window .titlebar .kruisje {
+    float: right;
+}
+
+.window .vuilehack {
+    border-top: solid 1px white;
+    border-left: solid 1px white;
+    border-bottom: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    padding: 1px;
+}
+
+#desktop.dragging iframe {
+    pointer-events: none;
+}
+
+.window iframe {
+    width: 800px;
+    height: 600px;
+    border: none;
+    overflow: no-scroll;
+}
+
+.window .statusbar {
+    display: block;
+    width: calc(100% -2px);
+    height: 20px;
+    border: inset 1px #ddd;
+    position: relative;
+}
+
+.window .statusbar .resizer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

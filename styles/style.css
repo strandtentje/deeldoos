@@ -1,3 +1,7 @@
+body, html {
+    height: 100%;
+}
+
 body {
 	font-family: sans-serif;
     font-size: 12px;
@@ -8,7 +12,6 @@ body {
 
 .toolbar {
     background: #bbb;
-    float: left;
     border: outset #ddd 1px;
 }
 
@@ -19,7 +22,18 @@ body {
 }
 
 .toolbar ul li {
-    display: inline;
+    display: block;
+    float: left;
+}
+
+.toolbar ul:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    font-size: 0;
 }
 
 .toolbar ul li a {
@@ -29,8 +43,27 @@ body {
     border: solid transparent 1px;
 }
 
+.toolbar .label {
+    padding: 8px;
+    line-height: 20px;
+}
+
+.toolbar .faux.field {
+    border: inset 1px white;
+    background: white;
+    float: left;
+    min-width: 8cm;
+    margin: 0px 8px;
+    padding: 2px;
+    position: relative;
+}
+
 .toolbar ul li a:hover {
     border: outset #ddd 1px;
+}
+
+.toolbar ul li a.selected {
+    border: inset #ddd 1px;
 }
 
 .toolbar form {
@@ -41,7 +74,27 @@ body {
 
 #results {
     clear: both;
-    border: solid 2px #bbb;
+}
+
+#results ul {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.toolbar + #results ul {
+    height: calc(100vh - 34px);
+}
+
+.toolbar + .toolbar + #results ul {
+    height: calc(100vh - 66px);
+}
+
+.toolbar + .toolbar + .toolbar + #results ul {
+    height: calc(100vh - 98px);
+}
+
+.toolbar + .toolbar + .toolbar + .toolbar + #results ul {
+    height: calc(100vh - 130px);
 }
 
 #credits {
@@ -87,5 +140,7 @@ body {
 {% balkview %}
 
 {% tabelview %}
+
+{% windows %}
 
 {% filetypes %}

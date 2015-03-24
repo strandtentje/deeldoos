@@ -15,6 +15,7 @@
 
 .tabelview ~ ul .icon {
     content: 'Geen icoon';
+    background-size: 16px;
 }
 
 
@@ -51,8 +52,8 @@
 .tabelview ~ ul .options {    
     position: absolute;
     top: 0;
-    left: 16px;
-    width: calc(100% - 16px);
+    left: 20px;
+    width: calc(100% - 20px);
 }
 
 .tabelview ~ ul .name {
@@ -60,7 +61,8 @@
     overflow: hidden;
     display:  block;
     float: left;
-    width: 50%;
+    min-width: 50%;
+    width: 100px;
 }
 
 .tabelview ~ ul .hrsize {
