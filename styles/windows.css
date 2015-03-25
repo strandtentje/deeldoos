@@ -8,6 +8,10 @@
     height: calc(100%);
 }
 
+.results.desktop {
+    background: white;
+}
+
 .desktop a.icon {
     display: block;
     width: 64px;
@@ -16,6 +20,10 @@
     text-align: center;
     text-decoration: none;
     color: white;
+}
+
+.results.desktop a.icon {
+    color: black;
 }
 
 .desktop a span {
