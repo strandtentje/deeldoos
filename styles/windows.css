@@ -10,11 +10,12 @@
 
 .results.desktop {
     background: white;
+    border: inset 1px #bbb;
 }
 
 .desktop a.icon {
     display: block;
-    width: 64px;
+    width: 96px;
     height: 64px;
     padding: 8px;
     text-align: center;
@@ -22,8 +23,17 @@
     color: white;
 }
 
+.desktop a.icon span {
+    margin-top: 6px;
+    background: teal;
+}
+
 .results.desktop a.icon {
     color: black;
+}
+
+.results.desktop a.icon span {
+    background: white;
 }
 
 .desktop a span {
