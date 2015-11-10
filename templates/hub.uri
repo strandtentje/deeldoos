@@ -1,1 +1,1 @@
-{% hub %}/{% directoryname %}
+http://{% hubip %}:{% hubport %}/{% directoryname %}
