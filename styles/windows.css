@@ -45,6 +45,9 @@
     border: dotted 1px gray;
 }
 
+.unwide.window {
+    width: 400px;
+}
 
 .window {
     background: #bbb;
