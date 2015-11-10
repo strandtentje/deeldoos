@@ -1,0 +1,78 @@
+body {
+	font-family: sans-serif;
+	background-color: #BBB;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	display: none;
+}
+
+span.title {
+	margin: 8px;
+	display: block;
+}
+
+ul {
+	margin: 8px;
+	padding: 0;
+	list-style-type: none;
+	background-color: white;
+	border: inset 1px #BBB;
+	height: 5cm;
+	overflow-y: scroll;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+#offlineusers li:before,
+#onlineusers li:before {
+	display: block;
+	float: left;
+	content: '.';
+	font-size: 0;
+	width: 16px;
+	height: 16px;
+	background-image: url('/static/bud.jpg');
+	background-size: 16px 16px;
+}
+
+#offlineusers li:before {
+	background-image: url('/static/offbud.jpg');	
+}
+
+#onlineusers {
+	height: calc(60vh - 1.2cm);
+}
+
+#offlineusers {
+	height: calc(40vh - 1.2cm);
+}
+
+#messages {
+	height: calc(100vh - 1.2cm);
+}
+
+#messages li {	
+	border: solid 1px white;
+}
+
+#messages li:hover {
+	background-color: navy;
+	color: white;
+	border: dotted 1px yellow;
+}
+
+#messages p {
+	margin: 0;
+	padding: 0;
+	font-size: 13pt;
+}
+
+#messages .attribution {
+	font-size: 10pt;
+}
