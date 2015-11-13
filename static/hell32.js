@@ -74,7 +74,6 @@ function clickety(hwnd) {
 	});
 
 	$(".titlebar .kruisje", hwnd).click(function() {
-		hwnd.responsible.dontdoit = false;
 		hwnd.remove();
 	});
 }
@@ -86,9 +85,6 @@ $(".window").each(function() {
 });
 
 $("a.runnable").click(function() {
-	if (this.dontdoit) {
-		return false;
-	}
 
 	var barelink = $(this).attr("href");
 	var link = "/window" + barelink;
@@ -105,10 +101,6 @@ $("a.runnable").click(function() {
 
 	var added = $(response);
 	var iframe = $("iframe", added);
-
-	iframe.on('load', function() {
-		$(".caption", added).html(this.contentDocument.title);	
-	});
 
 	if ($(this).hasClass("single")) {
 		added.responsible = this;
