@@ -21,7 +21,3 @@ Deeldoos is gebaseerd op ApolloGeese
 (https://github.com/strandtentje/apollogeese), het is zodoende een doodsimpele 
 webservice en je bent ook van harte welkom om er zelf in te gaan rommellen. 
 Ik ga hier spijt van krijgen.
-
-Mocht je een serieuze exploit vinden, dan zal ik een melding in dank afnemen 
-middels traktatie op een biertje of iets dergelijks. Let wel: misschien vind
-ik dat je sploit een feature is.
